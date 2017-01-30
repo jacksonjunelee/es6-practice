@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>let and const real world</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      const name = 'wes';
+
+    (function(){
+      var name = 'wes';
+      console.log(name)
+    })();
+
+    {
+      const name = 'wes';
+
+    }
+
+    for (var i =0; i< 10; i++) {
+      console.log(i);
+
+      setTimeout(funciton(){
+        console.log('the number is' + i)
+      }, 1000);
+    }
+
+    </script>
+
+
+  </body>
+</html>

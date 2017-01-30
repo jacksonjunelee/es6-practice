@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Iterables & looping</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const cuts = ['chuck', 'brisket', 'shank', 'short rib'];
+
+      for (let i =0; i < cuts.length; i++) {
+        console.log(cuts[i]);
+      }
+
+      cuts.forEach((cut) => {
+        console.log(cut);
+        debugger
+      })
+      // cannot abort the loop and cannot skip one of the one
+      // cannot use break and continue
+
+      // for (const index in cuts) {
+      //   console.log(cuts[index]);
+      // }
+      // interate through everything including prototypes
+
+      for (const cut of cuts) {
+        console.log(cut);
+      }
+      // can use break and continue
+      // holy shit!!! this is cool.
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const inventors = ['Einstein', 'Newton', 'Galilio'];
+      const newInventors = ['Musk', 'Job'];
+      // inventors.push.apply(inventors, newInventors);
+      console.log(inventors);
+      inventors.push(...newInventors)
+
+      // const name = ['Wes', 'Bos']
+      //
+      // function sayHi(first, last) {
+      //   alert(`Hey there ${first} ${last}`)
+      // }
+      //
+      // sayHi(...name)
+
+
+      function convertCurrency(rate, ...amounts) {
+        // console.log(rate, amounts);
+        // console.log(rate, tax, tip, amounts)
+        return amounts.map(amount => amount * rate)
+      }
+
+      convertCurrency(1.43, 10,23, 54, 3)
+
+      const runner = ['Wes Bos', 123, 5.4, 5.5, 3, 6, 7];
+
+      const [name, id, ...runs] = runner
+
+      const team = ['Wes Bos', 'Kait', 'Lux']
+      const [captain, assistant, ...players] = team;
+    </script>
+  </body>
+</html>

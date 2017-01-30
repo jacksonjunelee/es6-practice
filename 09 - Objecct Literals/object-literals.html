@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object Literal Upgrades</title>
+  </head>
+  <body>
+    <p></p>
+    <script type="text/javascript">
+      const first = 'snickers';
+      const last = 'bos';
+      const age = 2;
+      const breed = 'King Charles Cav';
+      const dog = {
+        firstName: first,
+        last,
+        age,
+        breed,
+        pals: ['Hugo', 'Sunny']
+      };
+
+      // const tag = document.querySelector('p')
+      // let word = ''
+      // console.log(dog)
+      //
+      // word = dog.reduce(value => console.log(value))
+      // for (const value in dog) {
+      //   word += dog[value] + ' '
+      // }
+
+      // tag.innerHTML = word
+
+      // console.log(word)
+
+
+      // const modal = {
+      //   create: function() {},
+      //   open: function() {},
+      //   close: function() {},
+      // }
+
+      const modal = {
+        create(selector) {}
+        open(content){}
+        close(goodbye){}
+      }
+
+      const key = 'pocketColor';
+      const value = 'yellow';
+
+      const tshirt = {
+        [key]: value,
+        [`${key}Opposite`]: invertColor(value);
+      }
+
+
+
+
+
+    </script>
+  </body>
+</html>
