@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Building Promise</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const p = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(Error('Wes is Cool'));
+        }, 1000);
+      });
+
+      p
+        .then(data => {
+          console.log(data);
+        })
+        .catch(err => {
+          console.error(err);
+        })
+    </script>
+  </body>
+</html>
